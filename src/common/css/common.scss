@@ -1,0 +1,116 @@
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+pre,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+select,
+input,
+img,
+select {
+  vertical-align: middle;
+}
+
+/*p span 自动换行*/
+p,
+span {
+  word-break: break-all;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  color: $color-font;
+  line-height: 22px;
+  font-size: 12px;
+  font-family: "PingFangSC-Regular", "Microsoft YaHei", "Helvetica",
+    "sans-serif";
+  background: #f0f2f5;
+  padding: 0 !important; //处理点击弹窗时右侧出现留白问题
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: $main-color;
+}
+
+a:visited {
+  color: $main-color-light;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: $main-color;
+}
+/*在谷歌下移除input[number]的上下箭头*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+/*在firefox下移除input[number]的上下箭头*/
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.clearfix:after {
+  /*伪元素是行内元素 正常浏览器清除浮动方法*/
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+  /*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+}
+
+#app {
+  height: 100%;
+}
+.h5, h5 {
+  font-size: 20px;
+}
+.text-muted {
+  color: #8c8c8c!important;
+}
+.font-regular {
+  font-weight: 400!important;
+}
+.h1, .h2, h1, h2 {
+  font-weight: 700;
+  color: #141414;
+}
+.h1, h1 {
+  font-size: 48px;
+}
