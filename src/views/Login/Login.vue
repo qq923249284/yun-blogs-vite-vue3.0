@@ -71,7 +71,7 @@
         </p>
       </a-col>
       <a-col :span="24" :md="12" :lg="12" :xl="12" class="col-img">
-        <img src="images/img-signin.jpg" alt="" />
+        <img src="~@/assets/images/img-signin.jpg" alt="" />
       </a-col>
     </a-row>
   </div>

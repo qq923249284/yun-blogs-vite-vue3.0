@@ -1,7 +1,7 @@
 <template>
   <div
     class="sign-up-header"
-    style="background-image: url('images/bg-signup.jpg')"
+    style="background-image: url('@/assets/images/bg-signup.jpg')"
   >
     <div class="content">
       <h1 class="mb-5">Sign Up</h1>

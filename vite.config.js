@@ -5,6 +5,11 @@ import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  root: "./",
+  build: {
+    outDir: "../yun-node/public/",
+    emptyOutDir: "../yun-node/public/",
+  },
   plugins: [
     vue(),
     Components({
@@ -33,6 +38,7 @@ export default defineConfig({
 				 */
         additionalData:
           '@import "@/common/css/globalVariable.scss";@import "@/common/css/mixin.scss";',
+        charset: false
       },
     },
   },
