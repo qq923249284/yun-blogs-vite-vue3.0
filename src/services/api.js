@@ -1,4 +1,4 @@
-import service from "./axios";
+import service from "./request";
 
 /**
  * @description: 用户名是否存在

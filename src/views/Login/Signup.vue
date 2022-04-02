@@ -1,7 +1,7 @@
 <template>
   <div
     class="sign-up-header"
-    style="background-image: url('@/assets/images/bg-signup.jpg')"
+    :style="{'background-image': 'url('+tu1+')'}"
   >
     <div class="content">
       <h1 class="mb-5">Sign Up</h1>
@@ -72,6 +72,7 @@
 </template>
 
 <script setup>
+import tu1 from "@/assets/images/bg-signup.jpg";
 import { signupUser, getHaveName } from "api";
 import { ref, reactive, getCurrentInstance } from "vue";
 import {useRoute, useRouter} from 'vue-router';

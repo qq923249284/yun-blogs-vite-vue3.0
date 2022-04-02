@@ -24,26 +24,13 @@ const errorHandler = (error) => {
     // 从 localstorage 获取 token
     const token = storage.get(ACCESS_TOKEN);
     if (error.response.status === 403) {
-      notification.error({
-        message: "Forbidden",
-        description: data.message,
-      });
+      message.error(data.message);
     }
     if (
       error.response.status === 401 &&
       !(data.result && data.result.isLogin)
     ) {
-      notification.error({
-        message: "Unauthorized",
-        description: "Authorization verification failed",
-      });
-      if (token) {
-        store.dispatch("Logout").then(() => {
-          setTimeout(() => {
-            window.location.reload();
-          }, 1500);
-        });
-      }
+      message.error("Authorization verification failed");
     }
   }
   return Promise.reject(error);

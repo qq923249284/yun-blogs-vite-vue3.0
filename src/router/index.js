@@ -37,7 +37,6 @@ const router = createRouter({
   routes,
 });
 router.beforeEach((to, from, next) => {
-  console.log(to.meta.noAuth);
   if (!to.meta.noAuth && !storage.get(ACCESS_TOKEN)) {
     next({
       path: "/login",

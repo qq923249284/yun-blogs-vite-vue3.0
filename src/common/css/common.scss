@@ -42,15 +42,7 @@ html {
   overflow: hidden;
 }
 
-body {
-  color: $color-font;
-  line-height: 22px;
-  font-size: 12px;
-  font-family: "PingFangSC-Regular", "Microsoft YaHei", "Helvetica",
-    "sans-serif";
-  background: #f0f2f5;
-  padding: 0 !important; //处理点击弹窗时右侧出现留白问题
-}
+
 
 a {
   text-decoration: none;
